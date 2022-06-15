@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Tours - Adventures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container navigation" id="container">
+            <div class="logo" id="logo">
+                <p>Indiana</p>
+                <div class="mobile">
+                    <i class="fa-solid fa-bars" id="icon" onclick="navbar()"></i>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">  
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-link">Home</li>
+                    <li class="nav-link">About</li>
+                    <li class="nav-link">Contact</li>
+                    <li class="nav-link">Products</li>
+                    <li class="nav-link">Menu</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner section  -->
+
+    <section class="banner">
+        <div class="banner_content">
+            <div class="search">
+                <input type="search" class="searchInput" placeholder="Search Places, Restaurants..">
+                <p class="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- places sections -->
+
+    <section class="places_section">
+        <h1 class="section_title">Featured Places</h1>
+        <div class="place_container">
+            <div class="place">
+                <div class="place_details">
+                    <h1 class="card_title">Beautiful Mountains</h1>
+                    <button class="card_btn">View More</button>
+                </div>
+            </div>
+            <div class="place">
+                <div class="place_details">
+                    <h1 class="card_title">adventures</h1>
+                    <button class="card_btn">View More</button>
+                </div>
+            </div>
+            <div class="place">
+                <div class="place_details">
+                    <h1 class="card_title"> Towers</h1>
+                    <button class="card_btn">View More</button>
+                </div>
+            </div>
+            
+            <div class="place">
+                <div class="place_details">
+                    <h1 class="card_title">Beaches</h1>
+                    <button class="card_btn">View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- destination video  section -->
+     <section class="video_destinations">
+        <video controls autoplay class="vid" id="vid">
+            <source src="./assets/vidoes/production ID_4782135.mp4"> 
+        </video>
+        <div class="video_overlay">
+            <p class="destinations_contant">
+                Beautiful Destinations
+            </p>
+        </div>
+    </section>
+
+    <!-- Package section -->
+    <section class="places_section">
+        <h1 class="section_title">
+            Top Rated Packages
+        </h1>
+        <div class="place_container package_container">
+            <div class="packages">
+                <div class="package_img">
+                    <img src="./assets/images/package-1.jpg" alt="">
+                </div>
+                <div class="package_details">
+                    <p class="package_title">Kerala Tour package</p>
+                    <p class="package_pay">&#8377; 11,999/-</p>
+
+                    <div class="rating">
+                        <div class="grey_stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="gold_stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    (4.1)
+                </div>
+            </div>
+
+            <div class="packages">
+                <div class="package_img">
+                    <img src="./assets/images/package-2.jpg" alt="">
+                </div>
+                <div class="package_details">
+                    <p class="package_title">Himachal Tour package</p>
+                    <p class="package_pay">&#8377; 15,599/-</p>
+
+                    <div class="rating">
+                        <div class="grey_stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="gold_stars himachal">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    (4.5)
+                </div>
+            </div>
+
+            <div class="packages">
+                <div class="package_img">
+                    <img src="./assets/images/package-3.jpg" alt="">
+                </div>
+                <div class="package_details">
+                    <p class="package_title">Rajasthan Tour package</p>
+                    <p class="package_pay">&#8377; 16,700/-</p>
+
+                    <div class="rating">
+                        <div class="grey_stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="gold_stars rajasthan">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    (4.3)
+                </div>
+            </div>
+            <div class="packages">
+                <div class="package_img">
+                    <img src="./assets/images/package-4.jpeg" alt="">
+                </div>
+                <div class="package_details">
+                    <p class="package_title">Telagana tour package</p>
+                    <p class="package_pay">&#8377; 10,999/-</p>
+
+                    <div class="rating">
+                        <div class="grey_stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="gold_stars telagana">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    (4.7)
+                </div>
+            </div>
+
+            <div class="packages">
+                <div class="package_img">
+                    <img src="./assets/images/package-5.jpeg" alt="">
+                </div>
+                <div class="package_details">
+                    <p class="package_title">chennai Tour package</p>
+                    <p class="package_pay">&#8377; 13,799/-</p>
+
+                    <div class="rating">
+                        <div class="grey_stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="gold_stars chennai">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    (4.0)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- destination section -->
+
+    <!-- <section class="destination">
+        <div class="destination_container">
+            <div class="destinations">
+                <h1>swimming</h1>
+            </div>
+            <div class="destinations">
+                <h1>stargazing</h1>
+                <span class="white_area"></span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Gallery section -->
+    <section class="gallery">
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                        <p>Lorem ipsum</p>
+                        <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <div class="gall_overlay">
+                <div class="cut"></div>
+                <div class="gall_details">
+                    <p>Lorem ipsum</p>
+                    <button class="btn_view">view</button>                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1 class="section_title"> 
+            Testimonials
+        </h1>
+        <div class="container testimonial_container">
+            <div class="user_picture">
+                <img src="./assets/images/user.webp" alt="">
+            </div>
+            <div class="testimonial">
+                <h1 class="user_name">Jason Roy</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam itaque eum similique, 
+                    facilis fugiat id sunt quibusdam libero minus repudiandae ea! Laboriosam quam recusandae
+                     et corrupti dolores ipsa nam esse.
+                     itaque quaerat magnam corrupti mollitia obcaecati ullam! Sequi alias laboriosam,
+                      voluptates dolor id earum eos quae suscipit dolore accusamus. Hic, quasi.
+                </p>
+
+                <div class="user_gallery">
+                    <img src="https://images.pexels.com/photos/797824/pexels-photo-797824.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img src="https://images.pexels.com/photos/176395/pexels-photo-176395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img src="https://images.pexels.com/photos/1835712/pexels-photo-1835712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img src="https://images.pexels.com/photos/279574/pexels-photo-279574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--blogs section  -->
+
+    <section class="blogs">
+        <h1 class="section_title">
+            Recent Blogs
+        </h1>
+        <div class="container blogs_container">
+            <div class="blog">
+                <div class="blog_img">
+                    <img src="https://images.pexels.com/photos/192729/pexels-photo-192729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="blog_detail">
+                    <h2>Historical Places</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
+                            nam architecto possimus quaerat iusto, repellat libero voluptatibus dolorem doloremque pariatur 
+                        illo vero exercitationem repellendus vitae repudiandae numquam totam
+                    </p>
+                    <button class="blog_btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="blog_img">
+                    <img src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="blog_detail">
+                    <h2>Machu Pichhu</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
+                            nam architecto possimus quaerat iusto, repellat libero voluptatibus dolorem doloremque pariatur 
+                        illo vero exercitationem repellendus vitae repudiandae numquam totam
+                    </p>
+                    <button class="blog_btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="blog_img">
+                    <img src="https://images.pexels.com/photos/2901134/pexels-photo-2901134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="blog_detail">
+                    <h2>Stargazing places</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
+                            nam architecto possimus quaerat iusto, repellat libero voluptatibus dolorem doloremque pariatur 
+                        illo vero exercitationem repellendus vitae repudiandae numquam totam
+                    </p>
+                    <button class="blog_btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="blog_img">
+                    <img src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="blog_detail">
+                    <h2>Snow Mountains</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
+                            nam architecto possimus quaerat iusto, repellat libero voluptatibus dolorem doloremque pariatur 
+                        illo vero exercitationem repellendus vitae repudiandae numquam totam
+                    </p>
+                    <button class="blog_btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="footer">
+        <h1 class="section_title">
+            Contact Us
+        </h1>
+        <div class="footer_container">
+            <div class="footer_module">
+                <div class="footer_one">
+                    <ul>
+                        <li class="list_heading">Check us</li>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Products</li>
+                        <li>Menu</li>
+                    </ul>
+                </div>
+                <div class="footer_two">
+                    <ul>
+                        <li class="list_heading center">All About US</li>
+                        <li>Indiana Tours - Adventures</li>
+                        <li class="number"> +91 9876543210</li>
+                        <li>indiana@greattravels.com</li>
+                        <li>
+                            <ul class="media_icons">
+                                <li>
+                                    <img src="./assets/images/facebook (2).png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/twitter.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/instagram.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/linkedIn.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/youtube.png" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_three">
+                    <div class="places">
+                        <ul>
+                            <li class="list_heading">Top Rates Places</li>
+                            <li class="footer_destination">Kerala</li>
+                            <li class="footer_destination">Himachal</li>
+                            <li class="footer_destination">Chennai</li>
+                            <li class="footer_destination">Hyderabad</li>
+                            <li class="footer_destination">Rajasthan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
